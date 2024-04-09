@@ -1,0 +1,160 @@
+.main-store{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #020a21 ;
+    padding: 50px;
+    padding-top: 0;
+    background-image: url(./img/store-background.jpg);
+    background-size: cover;
+    position: relative;
+    top: 50px;
+    margin-bottom: 20px;
+}
+@media (width<992px) {
+    .offers {
+        margin-top: 0;
+    }
+}
+.main-store::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#020a21e0 ;
+    top: 0;
+
+}
+.offers{
+ display: flex;
+ justify-content:space-between;
+ flex-direction: column;
+ align-items: center;
+ z-index: 1;
+ margin-bottom: 50px;
+}
+.offers h1{
+    color: white;
+    background-color: #2d58da;
+    background-color: #2b4288;
+    padding: 29px;
+    margin: 0;
+    width: 100dvw;
+    animation: offer 2s infinite ease-in-out ;
+}
+@keyframes offer {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+.offers-store-slider{
+    width: 100%;
+}
+
+.offers-store-slider button{
+    display: none;
+}
+.offers-store-slider .carousel-inner .carousel-item img {
+    height: 150px;  
+}
+
+.store-filter{
+    z-index:1;
+    width: 90dvw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.store-filter div{
+padding: 0.5rem;
+border-radius: 15px;
+ border-width: 1.5px;
+ font-weight: bold;
+ letter-spacing: .5px;
+ z-index: 1;
+ border: 1px solid #ff9800;
+
+}
+.store-filter .active{
+    border: none;
+    outline: none;
+    background-color: #ff9800;
+    color: #020a21;
+}
+.store-filter .active  a{
+    color: #020a21;
+}
+.store-filter div  a{ 
+ color: #ff9800; 
+ z-index: 1;
+}
+
+ .store-filter  div:hover {
+    border: none;
+    outline: none;
+    background-color: #ff9800;
+    color: #020a21 !important;
+}
+
+@media (max-width:545px) {
+    .store-filter div  a{
+        font-size: 12px;
+    }
+    .store-filter{
+      
+        width: 100dvw;
+    }
+}
+
+@media (max-width:425px) {
+    .store-filter div  a{
+        font-size: 10px;
+    }
+
+}
+@media (max-width:325px) {
+    .store-filter div  a{
+        font-size: 9px;
+    }
+
+}
+
+@media (min-width:845px) {
+    .offers h1 {
+       
+        text-align: center;
+    }
+
+}
+@media (max-width:845px) {
+    .offers h1 {
+        font-size: 32px;
+     
+    }
+
+}
+@media (max-width:785px) {
+    .offers h1 {
+        font-size: 28px;
+      
+    }
+
+}
+ @media (max-width:720px) {
+    .offers h1 {
+        font-size: 26px;
+        
+    }
+
+}
+

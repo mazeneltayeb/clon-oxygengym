@@ -1,0 +1,142 @@
+.main-pricingPlan{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column;
+height: 100dvh;
+background-image: url(./img/resption.jpg);
+color: white;
+padding: 30px;
+position: relative;
+}
+
+.main-pricingPlan::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000f0;
+}
+.main-pricingPlan h1{
+z-index: 1;
+/* margin-bottom: 50px; */
+}
+.plan-container {
+    width: 100dvw;
+    justify-content: space-evenly;
+    /* height: 450px; */
+    z-index: 1;
+}
+.plan-container > div{
+    width: calc(90% / 3);
+    border:2px solid #799cff;;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    transform: skewY(-4deg);
+    position: relative;
+}
+
+/* .plan-container > div::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff9800;
+    top: 0;
+    left: 0;
+    animation: planspaner 10s 0s infinite forwards ;
+}
+@keyframes planspaner {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        left: 100%;
+        top: 0;
+    }
+    50%{
+        left: 100%;
+   
+        top: 100%;
+
+    }
+    75%{
+        left: 0;
+        top: 100%;
+    
+    }
+    100%{
+        left: 0;
+        top: 0;
+    
+    }
+} */
+
+
+.plan-container > div div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* transform: skewY(4deg); */
+}
+.plan-container > div div h1{   
+    color: #799cff;
+    transform: skewY(4deg);
+}
+.plan-container > div  h4{
+    transform: skewY(4deg);
+
+}
+.plan-container > div div h6{
+    color: #C1BBBB;
+    transform: skewY(4deg);
+}
+.plan-container > div button{
+    background-color:#799cff;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    margin-top: 25px;
+    transform: skewY(4deg);
+}
+
+.plan-container > div button:hover{
+    background-color:white;
+    color: black;
+}
+
+.price{
+  margin-bottom: 30px;
+
+}
+@media (max-width:932px) {
+    .main-pricingPlan{
+        height: fit-content;
+        }
+        .main-pricingPlan > h1{
+            margin-bottom: 40px ;
+            line-height: 50px;
+        }
+        .plan-container > div{
+            width: calc(90% / 2);
+            margin-bottom: 40px;
+        }
+}
+
+    @media (max-width:600px) {
+        .plan-container > div{
+            width: 300px;
+       
+        }
+        .main-pricingPlan > h1{
+            line-height: 50px;
+        }
+    }
+

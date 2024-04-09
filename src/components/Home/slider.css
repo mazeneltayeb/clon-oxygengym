@@ -1,0 +1,21 @@
+.carousel-inner .carousel-item img{
+    /* object-fit: cover; */
+    width: 100dvw;
+    height: 70dvh;
+}
+.home-carousel {
+    position: relative;
+    /* margin-top: 50px; */
+}
+.carousel-control-next-icon {
+    display: none;
+}
+.carousel-control-prev-icon {
+    display: none;
+}
+
+@media (width<992px) {
+    .home-carousel {
+        margin-top: 0;
+    }
+}

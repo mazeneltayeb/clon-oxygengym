@@ -1,0 +1,348 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 25px 50px;
+    height: 50px;
+    width: 100dvw;
+    /* background-color: #081026; */
+    background-color: #192443f2;
+    color: white;
+    box-shadow: 0px -6px 10px 10px #081026;
+}
+.logo img{
+    height: 35px;
+}
+.img-close{
+    display: none;
+}
+.nav-link-bar{
+    display: flex;
+    margin: unset;
+}
+.nav-link-bar .active {
+    color: #FF9800;
+    cursor: pointer;
+    position: relative;
+}
+.nav-link-bar .active::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    background-color: #FF9800;
+    height: 2px;
+    bottom: 4px;
+    left: 24%;
+}
+.nav-link-bar li{
+    list-style: none; 
+}
+.nav-link-bar li a{
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+.nav-bar-icon{
+    display: none;
+    font-size: 30px;
+}
+.scrol-top{
+    width: 40px;
+    height: 40px;
+    background-color: #FF9800;
+    position:fixed;
+    top: 86dvh;
+    right: 25px;
+    z-index: 1111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    display: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: #192443f2 0px 19px 38px, #020a21 0px 15px 12px;
+    cursor: pointer;
+}
+.personal-training{
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    color: #FF9800 !important;
+    border: 1px solid #FF9800;
+    border-radius: 15px;
+    padding: 7px !important;
+}
+@media screen and (max-width:768px) {
+    .nav-container{
+        padding: 0 20px;
+    }
+    .nav-bar-icon{
+        display: flex;
+        width: 30px;
+        height: 32px;
+        margin-top: 42px;
+        margin-right: 30px;
+        position: fixed;
+        right: 0;
+    }
+    .nav-bar-icon::before{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: #081026;
+        background-image: url(../../img/toggler.bg.png);
+        background-size: cover;
+        right: -49%;
+        top: -43%;
+        border-radius: 50%;
+        border: 2px solid #FF9800;
+    }
+    .open-bar{
+        width: 100%;
+        height: 100%;
+       
+    }
+    .open-bar span:first-child{
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        top: 0; 
+        border-radius: 15px;
+    }
+    .open-bar  span:nth-child(2){
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        top: 14px;
+        border-radius: 15px;
+    }
+    .open-bar span:last-child{
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        bottom: 0;
+        border-radius: 15px;
+    }
+
+    .open-bar.active span:first-child{
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        background-color: #FF9800;
+        top: 13px;
+        border-radius: 15px;
+        transform: rotate(45deg);
+        
+    }
+    .open-bar.active span:nth-child(2){
+        display: none;
+    }
+    .open-bar.active span:last-child{
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        background-color: #FF9800;
+        bottom: 13px;
+        border-radius: 15px;
+        transform: rotate(-45deg);
+    }
+    .nav-link-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        background-color: #081026f0;
+        height: 100dvh;
+        width: 40dvw;
+        left: -700px;
+        padding: 15px 25px;
+        transition: 0.3s ease-in-out;
+        box-shadow: -5px 10px 20px 13px black;
+    }
+    .nav-link-bar.active{
+        left: 0;
+        
+    }
+    .img-close{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .nav-link-bar li {
+        margin-bottom: 40px;
+    }
+    .nav-link-bar li a{
+        margin: 0;
+    }
+    .img-close img{
+        height: 40px;
+    }
+    .nav-container{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .logo img{
+        display: none;
+    }
+    .about-store{
+        top: 0 !important;
+    }
+    .offers{
+        top: -75px;
+        position: relative;
+    }
+    .main-home > div{
+        top: -75px;
+        position: relative;
+    }
+
+}
+@media (max-width:570px) {
+    .nav-link-bar {
+        width: 50dvw;
+    }
+}
+@media (max-width:375px) {
+    .nav-link-bar {
+        width: 60dvw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root{
+    --nav-color:#004e98
+}
+
+#offcanvasNavbar-expand-lg{
+    width: 65vw !important;
+
+}   
+
+nav{
+    background-color: #081026;
+    color: white;
+  
+    box-shadow: 0px -6px 10px 10px #081026;
+      height: 55px;
+}
+
+.navbar-nav a{
+
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+cursor: pointer;
+}
+.link-container .active{
+    color: #FF9800;
+    cursor: pointer;
+}
+@media (max-width<992px) {
+ 
+}
+@media (width<992px) {
+    nav{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .navbar-toggler {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        background-image: url(../../img/toggler.bg.png);
+        background-size: cover;
+        border: 1.5px solid #FF9800 !important;
+        margin-top: 15px;
+        outline: 3px solid #020a21;
+    }
+
+    .navbar-nav a {
+     
+    }
+    .navbar-brand a img{
+        display: none;
+    }
+}
+.container-fluid{
+    color: white;
+}
+
+
+.navbar-toggler{
+    border: 1.5px white solid;
+  
+}
+.navbar-toggler:hover{
+    outline: none;
+}
+.offcanvas{
+    background-color: #060e1fc9;
+    color: white ;
+}
+.offcanvas button{
+    background-color: white;
+}
+.offcanvas-header{
+    border-bottom: 2px #FF9800 solid;
+    background-color: #020a21;
+}
+
+.btn-close{
+    background-color: #020a21 !important;
+    position: relative;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    background-color: #ff9800 !important;
+    opacity: 1 !important;
+} */
+
+
+
+

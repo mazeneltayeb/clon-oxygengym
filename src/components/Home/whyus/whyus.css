@@ -1,0 +1,96 @@
+
+
+:root{
+    --nav-color:#004e98;
+    --white-color:#FFFFFF;
+    --blue-color:#3a6ea5;
+    --mainTwo-color:#c0c0c0;
+    --gray-color:#E5E5E5;
+
+}
+
+.main-whyus{
+    /* background-color:#020a21 ; */
+    background-size: cover;
+    background-image: url(./img/equipment.jpg);
+    /* background-color: #14213D; */
+    /* background-color: var(--color-color); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* color: #c1bbbb; */
+    color: #FFFFFF;
+    position: relative;
+}
+.main-whyus::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color:#14213ddb ; */
+     background-color:#020a21e3 ;
+}
+
+.whyus-question{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+
+.whyus-answer .row div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 325px;
+    color: var(--gray-color);
+    z-index: 1;
+}
+.whyus-answer .row div p{
+    width: 80%;
+}
+
+.whyus-answer .row div svg{
+    width: 80px;
+    height: 80px;
+}
+.whyus-answer .row div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.icon-img{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 120px !important;
+    height: 120px !important;
+    background-color:var(--blue-color) ;
+    border-radius: 50%;
+    /* padding: 10px; */
+    /* border: 1px solid white;
+    outline: 2px solid #3a6ea5 ; */
+    position: relative;
+    
+}
+.icon-img::before{
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    border: 2px solid #3a6ea5;
+    border-radius: 50%;
+}
+
+/* .whyus-answer .row p{
+    text-align: center;
+} */
