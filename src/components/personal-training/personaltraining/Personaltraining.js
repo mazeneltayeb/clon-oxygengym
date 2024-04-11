@@ -3,10 +3,12 @@ import Client from "../client/Client";
 
 import { useState } from 'react';
 import Login from "../login/login";
+import useToken from "../useToken";
 
 
 function Personaltraining(){
- const [token, setToken] = useState();
+  
+  const { token, setToken } = useToken();
 
   if(!token) {
     return <Login setToken={setToken} />

@@ -8,11 +8,13 @@ async function loginUser(credentials) {
   return fetch('https://fakestoreapi.com/auth/login', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+
     },
     body: JSON.stringify(credentials)
   })
     .then(data => data.json())
+ 
  }
  
 
@@ -28,7 +30,7 @@ function Login({ setToken }) {
       password
     });
     setToken(token);
-    // console.log(token)
+    console.log(token.id)
   }
 
     return(
