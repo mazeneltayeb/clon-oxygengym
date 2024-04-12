@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import "./login.css"
+import { GrFingerPrint } from "react-icons/gr";
+import { IoPerson } from "react-icons/io5";
+
 
 
 
@@ -34,9 +37,19 @@ function Login({ setToken }) {
   }
 
     return(
-        <div className="login">
-        <h1>Please Log In</h1>
+      <div className='main-login'>
+           <div className="login">
+          <div className='finger-print-icon'>
+              <div>
+                  <GrFingerPrint size={100} />
+              </div>
+          </div>
+          <div className='form'>
         <form onSubmit={handleSubmit}>
+          <div className='sign'>
+            <IoPerson />
+            <h1>Sign in</h1>
+          </div>
           <label>
             <p>Username</p>
             <input type="text" onChange={e => setUserName(e.target.value)} />
@@ -46,10 +59,14 @@ function Login({ setToken }) {
             <input type="password" onChange={e => setPassword(e.target.value)} />
           </label>
           <div>
-            <button type="submit">Submit</button>
+            <button type="submit">Sing in</button>
           </div>
         </form>
+          </div>
+        
       </div>
+      </div>
+       
     )
 }
 

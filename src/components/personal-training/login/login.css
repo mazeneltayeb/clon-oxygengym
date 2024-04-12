@@ -1,7 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/login-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .login {
-   padding-top:75px ;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
+    height: 60dvh;
+    width: 90dvw;
+    background-color:#192443a3;
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 10px;
+    border: 1px solid #FF9800;
+    margin-top: 75px;
+}
+.finger-print-icon{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.finger-print-icon::before{
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border-left: 2px solid #FF9800;
+    border-right: 2px solid #FF9800;
+    /* background-color: red; */
+}
+.form{
+    height: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+.form form input{
+    align-items: center;
+    width: 90%;
+    margin-bottom: 20px;
+    width: 50dvw;
+    height: 5dvh;
+    background-color: #1924438a;
+    border: unset;
+    /* border-left: 2px solid #FF9800; */
+    border-bottom: 2px solid #FF9800;
+    caret-color:#FF9800;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.form form input:focus{
+    outline: none;
+}
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign h1{
+    margin-left: 7px;
+}
+.sign svg{
+    height: 30px;
+    width: 30px;
+}
+.form form button{
+    background-color: #FF9800;
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+}
+
+@media (max-height:830px) {
+    .login{
+        height: 80dvh;
+    }
+}
+@media(max-width:768px){
+    .login{
+        margin-top: unset;
+    }
 }
