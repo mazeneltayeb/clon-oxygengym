@@ -11,6 +11,8 @@
     background-image: url(./img/login-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    top: 50px;
+    position: relative;
 }
 
 .login {
@@ -25,7 +27,7 @@
     padding-top: 0;
     border-radius: 10px;
     border: 1px solid #FF9800;
-    margin-top: 75px;
+    /* margin-top: 75px; */
 }
 .finger-print-icon{
     height: 50%;
@@ -66,7 +68,6 @@
     height: 5dvh;
     background-color: #1924438a;
     border: unset;
-    /* border-left: 2px solid #FF9800; */
     border-bottom: 2px solid #FF9800;
     caret-color:#FF9800;
     color: white;
@@ -101,13 +102,73 @@
     font-size: 22px;
 }
 
-@media (max-height:830px) {
+@media (max-height:930px) {
     .login{
         height: 80dvh;
     }
 }
 @media(max-width:768px){
     .login{
-        margin-top: unset;
+        margin-top: unset; 
+    }
+    .main-login{
+        top: unset;
+    }
+}
+@media (max-height:590px) {
+    .login{
+        height: 85dvh;
+        /* margin-top: -50px; */
+    }
+}
+@media (max-height:550px) {
+   .finger-print-icon div svg{
+    width: 80px;
+   }
+   .finger-print-icon::before {
+    width: 115px;
+    height: 115px;
+   }
+}
+@media (max-height:515px) {
+    .finger-print-icon div svg{
+     width: 70px;
+    }
+    .finger-print-icon::before {
+     width: 105px;
+     height: 105px;
+    }
+ }
+ @media (max-height:500px) {
+    .finger-print-icon div svg{
+     display: none;
+    }
+    .finger-print-icon::before {
+     display: none;
+    }
+    .form{
+        height: 100%;
+    }
+ }
+
+/* @media (max-height:465px) {
+    .login{
+        height: 85dvh;
+    }
+} */
+@media (max-height:440px) {
+    .finger-print-icon div svg{
+        width: 50px;
+       }
+       .finger-print-icon::before {
+        width: 85px;
+        height: 85px;
+       }
+    
+}
+
+@media (max-height:410px) {
+    .login{
+        height: 98dvh;
     }
 }

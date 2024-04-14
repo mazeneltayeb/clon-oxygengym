@@ -7,7 +7,9 @@ import { IoPerson } from "react-icons/io5";
 
 
 
+
 async function loginUser(credentials) {
+
   return fetch('https://fakestoreapi.com/auth/login', {
     method: 'POST',
     headers: {
@@ -22,6 +24,7 @@ async function loginUser(credentials) {
  
 
 function Login({ setToken }) {
+
   const [username, setUserName] = useState();
   const [password, setPassword] = useState();
 
