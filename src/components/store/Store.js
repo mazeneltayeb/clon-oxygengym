@@ -9,6 +9,7 @@ import {Product,WheyProtein,Creatine,MultyVitamen,Accessories}from "./Product";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Footer from "../Home/footer/Footer";
+import Navbar from "../navbar/Navbar";
 function Store(){
   const [product,setProduct]=useState( <Product/>)
   let filter = document.querySelectorAll(".store-filter div ")
@@ -24,6 +25,7 @@ function Store(){
       
     return (
       <>
+      <Navbar/>
       <motion.div
        className="main-store"
        initial={{opacity:0,}}

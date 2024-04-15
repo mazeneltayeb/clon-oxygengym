@@ -2,6 +2,7 @@
 import "./client.css"
 // import HomeButton from "../HomeButton";
 import avatar from "./avatar.jfif"
+import { Link } from "react-router-dom";
 function Client(){
 
     // document.querySelector(".nav-container").style.opacity="0"
@@ -30,6 +31,11 @@ function Client(){
                     <img src={avatar} alt=""/>
                 </div>
                 <ul>
+                    <li>
+                       <Link to="/">
+                            Home
+                       </Link>
+                    </li>
                     <li>My Info</li>
                     <li>Work Out</li>
                     <li>Diet Plan</li>

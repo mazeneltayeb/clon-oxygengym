@@ -1,6 +1,7 @@
 
 // import About from "../aboutUs/About";
 // import Store from "../store/Store";
+import Navbar from "../navbar/Navbar";
 import Footer from "./footer/Footer";
 import "./home.css"
 import PricingPlan from "./pricingPlan/PricingPlan";
@@ -10,18 +11,17 @@ import { motion } from "framer-motion";
 function Home (){
     return(
 <div className="main-home"> 
-    <motion.div
-        initial={{opacity:0,}}
-        animate={{opacity:"100%",}}
-        exit={{opacity:0,}}
-     >
-    <ControlledCarousel/>
-    <Whyus/>
-    <PricingPlan/>
-    <Footer/>
-    {/* <About/>
-    <Store/> */}
-    </motion.div>
+<   Navbar/>
+        <motion.div
+            initial={{opacity:0,}}
+            animate={{opacity:"100%",}}
+            exit={{opacity:0,}}
+        >
+        <ControlledCarousel/>
+        <Whyus/>
+        <PricingPlan/>
+        <Footer/>
+        </motion.div>
     </div>
     )
 }

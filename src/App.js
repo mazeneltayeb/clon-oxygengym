@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
     {/* <OffcanvasExample/> */}
-    <Navbar/>
+    {/* <Navbar/> */}
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home/>}/>
