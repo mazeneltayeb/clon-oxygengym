@@ -21,7 +21,8 @@
     align-items: center;
     color: white;
     height: 60dvh;
-    width: 90dvw;
+    /* width: 90dvw; */
+    width: 65dvw;
     background-color:#192443a3;
     padding: 20px;
     padding-top: 0;
@@ -102,6 +103,7 @@
     font-size: 22px;
 }
 
+
 @media (max-height:930px) {
     .login{
         height: 80dvh;
@@ -110,6 +112,7 @@
 @media(max-width:768px){
     .login{
         margin-top: unset; 
+        width: 90dvw;
     }
     .main-login{
         top: unset;
@@ -171,4 +174,11 @@
     .login{
         height: 98dvh;
     }
+}
+
+@media (max-height: 450px){
+.login {
+    height: 80dvh;
+    margin-top: -50px;
+}   
 }

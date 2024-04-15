@@ -3,6 +3,7 @@ import { useState } from 'react';
 import "./login.css"
 import { GrFingerPrint } from "react-icons/gr";
 import { IoPerson } from "react-icons/io5";
+import HomeButton from '../HomeButton';
 
 
 
@@ -24,7 +25,9 @@ async function loginUser(credentials) {
  
 
 function Login({ setToken }) {
+  
 
+  // document.querySelector(".nav-container").style.opacity="0"
   const [username, setUserName] = useState();
   const [password, setPassword] = useState();
 
@@ -41,6 +44,7 @@ function Login({ setToken }) {
 
     return(
       <div className='main-login'>
+   
            <div className="login">
           <div className='finger-print-icon'>
               <div>

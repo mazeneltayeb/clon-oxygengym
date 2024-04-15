@@ -1,12 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
 .main-client{
     background-color: black;
     width: 100dvw;
     height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
-.main-client h1{
+.navbar-client{
+    background-color: #081026f0;
+    height: 100dvh;
+    width: 15dvw;
+    padding: 10px;
+}
+
+.navbar-client ul li{
     color: white;
-    
+    /* transform-origin:0  ;
+    transform:rotate(90deg); */
+    /* margin-top:100px ; */
+}
+.avatar-client img{
+    width: 100%;
+
+}
+@media (width > 768px) {
+    .navbar-client{
+        position: relative;
+        margin-top: 50px;
+    }
 }
