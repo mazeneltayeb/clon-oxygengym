@@ -2,7 +2,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import OffcanvasExample from './components/navbar/Navbar';
+// import OffcanvasExample from './components/navbar/Navbar';
 import Home from './components/Home/Home';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,8 +10,8 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import About from './components/aboutUs/About';
 import Store from './components/store/Store';
 import { AnimatePresence } from 'framer-motion';
-import Footer from './components/Home/footer/Footer';
-import Navbar from './components/navbar/Navbar';
+// import Footer from './components/Home/footer/Footer';
+// import Navbar from './components/navbar/Navbar';
 import Personaltraining from './components/personal-training/personaltraining/Personaltraining';
 function App() {
   const location =useLocation()

@@ -46,12 +46,14 @@ function Navbar(){
       <div className="logo">
           <img 
             src={logoImg}
+            alt=""
             />
       </div>
       <ul className={`nav-link-bar ${showNavbar && "active"}`}>
           <div className="img-close">
             <img 
               src={logoImg}
+              alt=""
               />
           </div>
           
@@ -65,7 +67,7 @@ function Navbar(){
           <Link className={location.pathname === "/store" ? "active" : ""} to="/store" onClick={handlerClickLink} >Store</Link>
           </li>
           <li>
-          <Link className="personal-training"  to="personaltraining" onClick={handlerClickLink} >Personal Training</Link>
+          <Link className="personal-training"  to="/personaltraining" onClick={handlerClickLink} >Personal Training</Link>
           </li>
       </ul>
       <div className="nav-bar-icon">

@@ -3,6 +3,7 @@ import "./client.css"
 // import HomeButton from "../HomeButton";
 import avatar from "./avatar.jfif"
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 function Client(){
 
     // document.querySelector(".nav-container").style.opacity="0"
@@ -25,7 +26,12 @@ function Client(){
 
 
     return(
-        <div className="main-client">
+        <motion.div
+            initial={{opacity:0,}}
+            animate={{opacity:"100%",}}
+            exit={{opacity:0,}}
+            className="main-client"
+        >
             <div className="navbar-client">
                 <div className="avatar-client">
                     <img src={avatar} alt=""/>
@@ -41,7 +47,7 @@ function Client(){
                     <li>Diet Plan</li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default Client;
