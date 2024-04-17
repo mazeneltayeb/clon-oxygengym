@@ -17,7 +17,7 @@ function Navbar(){
     scrollTopButtom.style.display= "flex"
     console.log("yy")
   }else{
-    scrollTopButtom.style.display= "none"
+     scrollTopButtom.style.display= "none"
   }
  }
 
@@ -67,7 +67,7 @@ function Navbar(){
           <Link className={location.pathname === "/store" ? "active" : ""} to="/store" onClick={handlerClickLink} >Store</Link>
           </li>
           <li>
-          <Link className="personal-training"  to="/personaltraining" onClick={handlerClickLink} >Personal Training</Link>
+          <Link className="personal-training"  to="/personaltraining"  >Personal Training</Link>
           </li>
       </ul>
       <div className="nav-bar-icon">

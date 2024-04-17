@@ -6,32 +6,48 @@
     background-color: black;
     width: 100dvw;
     height: 100dvh;
-
 }
 .navbar-client{
     background-color: #081026f0;
-    height: 100dvh;
+    height:100dvh;
     width: 15dvw;
     padding: 10px;
 }
-.navbar-client ul a{
+.navbar-client ul{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.navbar-client ul li a{
+    /* margin-top: 20px; */
     background-color: #FF9800 ;
     color:#081026f0 ;
-text-decoration: none;
-padding: 5px;
-border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
 
 }
 .navbar-client ul li{
     color: white;
     writing-mode: vertical-lr;
-    margin-top: 25px;
     list-style: none;
+    font-size: .8rem;
     font-weight: bold;
-    /* text-decoration: none; */
-    /* transform-origin:0  ;
-    transform:rotate(90deg); */
-    /* margin-top:100px ; */
+  
+}
+.logOut{
+    width: 3rem;
+    margin-left: -14px;
+    font-size: 0.6rem;
+    writing-mode: horizontal-tb;
+    background-color: #E61F25;
+    color: white;
+    text-decoration: none;
+    padding: 4px 0px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
 }
 .avatar-client img{
     width: 70px;
