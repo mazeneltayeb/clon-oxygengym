@@ -9,7 +9,7 @@ function Client(){
     const handleLogOut= ()=>{
         if(window.confirm("are you sure")) {
             localStorage.removeItem("token")
-            window.location.href = "https://clone-oxgengym.netlify.app/";
+            window.location.href = "https://clon-oxgengym.netlify.app/";
             // window.location.reload()
         }
        }
