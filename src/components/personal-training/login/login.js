@@ -58,11 +58,11 @@ function Login({ setToken }) {
           </div>
           <label>
             <p>Username</p>
-            <input type="text" onChange={e => setUserName(e.target.value)} />
+            <input type="text" onChange={e => setUserName(e.target.value)} placeholder='johnd' />
           </label>
           <label>
             <p>Password</p>
-            <input type="password" onChange={e => setPassword(e.target.value)} />
+            <input type="password" onChange={e => setPassword(e.target.value)} placeholder='m38rmF$'/>
           </label>
           <div>
             <button type="submit">Sing in</button>
