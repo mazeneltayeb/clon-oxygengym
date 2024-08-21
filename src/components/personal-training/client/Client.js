@@ -9,7 +9,7 @@ function Client(){
     const handleLogOut= ()=>{
         if(window.confirm("are you sure")) {
             localStorage.removeItem("token")
-            window.location.href = "https://oxgengym-ismailia.netlify.app/";
+            window.location.href = "https://oxgengym-ismailia.netlify.app";
             // window.location.reload()
         }
        }
